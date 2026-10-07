@@ -9,10 +9,10 @@ public class StudiKasus1_19 {
         int totalHarga, diskon, totalBayar;
         int kembalian, kurang;
 
-        System.out.print("Masukkan jumlah cup: ");
+        System.out.print("Masukkan Jumlah Cup: ");
         jumlahCup = sc.nextInt();
 
-        System.out.print("Masukkan uang bayar: ");
+        System.out.print("Masukkan Uang Bayar: ");
         uangBayar = sc.nextInt();
 
         totalHarga = jumlahCup * hargaPerCup;
@@ -25,16 +25,16 @@ public class StudiKasus1_19 {
 
         totalBayar = totalHarga - diskon;
 
-        System.out.println("Total harga: Rp. " + totalHarga);
+        System.out.println("Total Harga: Rp. " + totalHarga);
         System.out.println("Diskon: Rp. " + diskon);
-        System.out.println("Total bayar: Rp. " + totalBayar);
+        System.out.println("Total Bayar: Rp. " + totalBayar);
 
         if (uangBayar >= totalBayar) {
             kembalian = uangBayar - totalBayar;
             System.out.println("Kembalian Rp. " + kembalian);
         } else {
             kurang = totalBayar - uangBayar;
-            System.out.println("Uang tidak cukup kurang Rp. " + kurang);
+            System.out.println("Uang Tidak Cukup Kurang Rp. " + kurang);
         }
     }
 }

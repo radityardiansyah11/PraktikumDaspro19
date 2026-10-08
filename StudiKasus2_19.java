@@ -8,6 +8,7 @@ public class StudiKasus2_19 {
         int jumlahDokumen, Peringkat;
         char statusPendanaan;
 
+        System.out.print("\n");
         System.out.print("Nama Mahasiswa: ");
         namaMahasiswa = sc.nextLine();
 
@@ -55,13 +56,16 @@ public class StudiKasus2_19 {
                             "Dokumen Tidak Lengkap (kurang " + (4 - jumlahDokumen)
                                     + " Dokumen). Dana Penghargaan Tidak Diberikan");
                 }
+            } else if (statusPendanaan == '0') {
+                System.out.println("Status: Tidak Lolos Pendanaan PKM. Dana Penghargaan Tidak Diberikan");
             } else {
-                System.out.println("Tidak Lolos Pendanaan PKM. Dana Penghargaan Tidak Diberikan");
+                System.out.println("Status: Input Status Pendanaan Tidak Valid");
             }
 
         } else {
             System.out.println("Kegiatan Tidak Mendapat Dana Penghargaan");
         }
+        System.out.print("\n");
 
         sc.close();
 
